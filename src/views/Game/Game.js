@@ -90,7 +90,6 @@ export default function Game(props) {
         } else {
             divisor = levenshtein;
         }
-        
     } else {
         sum = levenshtein;
         if (diffD === 0) {
@@ -100,10 +99,15 @@ export default function Game(props) {
         }
     }
     const divisao = sum / divisor;
+
     let score = divisao;
     while (score > 100) {
+        if (divisor < 2) {
+          divisor = 2;
+        }
         score = score / divisor;
     }
+    console.log('score final: ', score);
     score = roundToTwo(score);
     const porcent = 100.00 - score;
     setScoreGlobal(porcent);
