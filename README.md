@@ -12,8 +12,8 @@ If you would like to download the code and try it for yourself:
 
 1. git clone `this repo`
 2. cd `this repo name`
-3. yarn install / npm install
-4. yarn start / npm start
+3. pnpm install / npm install
+4. pnpm run dev / npm run dev
 
 And have fun
 
