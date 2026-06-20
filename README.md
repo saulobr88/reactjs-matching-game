@@ -17,6 +17,6 @@ If you would like to download the code and try it for yourself:
 
 And have fun
 
-## Live
+## Live (SOON)
 
-To see this application live, access [here](https://matching-game-saulo.netlify.com/)
+To see this application live, access [here](https://www.netlify.com/)
