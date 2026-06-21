@@ -1,5 +1,7 @@
 export default interface Result {
-  match: string;
+  scoreGlobal: number;
   levenstainDistance: number;
   diferenceInDays: number;
+  loading: boolean;
+  hasResult: boolean;
 }
