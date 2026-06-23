@@ -6,7 +6,6 @@
   ],
   /* JUST FOR CHADCN/UI CLI */
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
