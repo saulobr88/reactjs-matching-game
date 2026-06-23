@@ -5,8 +5,8 @@ export function calculateDifferenceInDays(dt1: Date|string, dt2: Date|string): n
     let date1: Date;
     let date2: Date;
 
-    if (typeof dt1 === 'string') { date1 = new Date(dt1) } else { date1 = dt1 }
-    if (typeof dt2 === 'string') { date2 = new Date(dt2) } else { date2 = dt2 }
+    if (typeof dt1 === 'string') { date1 = new Date(`${dt1}T00:00`) } else { date1 = dt1 }
+    if (typeof dt2 === 'string') { date2 = new Date(`${dt2}T00:00`) } else { date2 = dt2 }
     
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
     const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));

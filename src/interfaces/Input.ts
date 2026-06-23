@@ -1,6 +1,6 @@
 export default interface Input {
   firstFullName: string;
-  firstBirthDate: Date;
+  firstBirthDate: Date|string;
   secondFullName: string;
-  secondBirthDate: Date;
+  secondBirthDate: Date|string;
 }
